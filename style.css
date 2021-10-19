@@ -9,8 +9,10 @@ body {
     color: #986f8e;
 }
 
-.current-temperature {
+#current-temperature {
     display: block;
+    font-size: 20px;
+    padding-bottom:5px;
 }
 
 #nice {
