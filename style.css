@@ -11,9 +11,12 @@ body {
 
 #current-temperature {
     display: block;
-    font-size: 20px;
+    font-size: 30px;
     padding-bottom:5px;
     color:#0A009C;
+    position:relative;
+ line-height:-5px;
+
    
 }
 
@@ -62,6 +65,7 @@ h1:hover {
      monospace;
     font-size: 70px;
      margin-left:50px;
+    
     
 
   
