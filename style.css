@@ -130,5 +130,10 @@ h1:hover {
 
 .cute-emoji {
     font-size: 60px;
-   
+    font-family: 'Courier New',
+    Courier,
+    monospace;
+}
+.current-precipitations{
+    font-size:16px;
 }
