@@ -13,6 +13,8 @@ body {
     display: block;
     font-size: 20px;
     padding-bottom:5px;
+    color:#0A009C;
+   
 }
 
 #nice {
@@ -55,7 +57,14 @@ h1:hover {
 }
 
 .current-weather-emoji {
-    font-size: 60px;
+     font-family: 'Courier New',
+     Courier,
+     monospace;
+    font-size: 70px;
+     margin-left:50px;
+    
+
+  
 }
 
 .search-button {
@@ -117,4 +126,5 @@ h1:hover {
 
 .cute-emoji {
     font-size: 60px;
+   
 }
