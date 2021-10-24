@@ -63,7 +63,7 @@ h1:hover {
      font-family: 'Courier New',
      Courier,
      monospace;
-    font-size: 70px;
+    font-size: 80px;
      margin-left:50px;
     
     
@@ -137,3 +137,7 @@ h1:hover {
 .current-precipitations{
     font-size:16px;
 }
+#info{
+    font-size: 20px;
+}
+#description{ text-transform: capitalize;}
