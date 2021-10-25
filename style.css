@@ -3,6 +3,26 @@ body {
     background: white;
 }
 
+
+h1 {
+    border: 1px transparent;
+    margin: 5px 5px 5px 5px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+h1:hover {
+    color: #22587b;
+}
+
+.current-weather-emoji {
+     font-family: 'Courier New',
+     Courier,
+     monospace;
+    font-size: 80px;
+     margin-left:50px;
+
+}
 .current-city {
     display: block;
     font-size: 20px;
@@ -12,12 +32,12 @@ body {
 #current-temperature {
     display: block;
     font-size: 30px;
-    padding-bottom:5px;
-    color:#0A009C;
-    position:relative;
- line-height:-5px;
+    padding-bottom: 5px;
+    color: #0A009C;
+    position: relative;
+    line-height: -5px;
 
-   
+
 }
 
 #nice {
@@ -48,28 +68,6 @@ body {
     text-align: center;
 }
 
-h1 {
-    border: 1px transparent;
-    margin: 5px 5px 5px 5px;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-h1:hover {
-    color: #22587b;
-}
-
-.current-weather-emoji {
-     font-family: 'Courier New',
-     Courier,
-     monospace;
-    font-size: 80px;
-     margin-left:50px;
-    
-    
-
-  
-}
 
 .search-button {
     padding: 15px 20px;
