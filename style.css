@@ -14,7 +14,10 @@ h1 {
 h1:hover {
     color: #22587b;
 }
-
+.card-body {
+    flex: 1 1 auto;
+    padding: 5rem 5rem;
+}
 .current-weather-emoji {
      font-family: 'Courier New',
      Courier,
@@ -67,7 +70,9 @@ h1:hover {
 .card-text {
     text-align: center;
 }
-
+#celsius-link{
+    margin: 0 auto;
+}
 
 .search-button {
     padding: 15px 20px;
@@ -120,10 +125,13 @@ h1:hover {
 
 #fahrenheit-link {
     margin-top: 5px;
+   
 }
 
 #celsius-link {
-    margin-top: 5px;
+     margin-top: 5px;
+   
+ 
 }
 
 .cute-emoji {
@@ -139,3 +147,6 @@ h1:hover {
     font-size: 20px;
 }
 #description{ text-transform: capitalize;}
+.min-temperature{
+    opacity: 0.7;
+}

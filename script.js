@@ -46,6 +46,43 @@ console.log(sentence);
 let today = document.querySelector("#current-time");
 today.innerHTML = `${sentence}`;
 
+//week 8
+function displayForecast(){
+let forecastElement = document.querySelector("#forecast");
+
+let forecastHTML = `<div class="row>"`;
+let days = ["Fri", "Sat", "Sun","Mon", "Tue"];
+days.forEach(function(day){
+  forecastHTML = forecastHTML + `
+
+<div class="col-2" > 
+    <div class="day">${day}  </div>
+</br>
+<div class="forecast-temperatures"></div>
+   <span class="max-temperature"> 17°C / </span>  
+  <span class="min-temperature "> 8°C </span> 
+ 
+</br>
+<img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" width="90" />
+ </div>
+</div>
+
+
+`;
+
+
+})
+
+forecastHTML = forecastHTML +`</div`;
+forecastElement.innerHTML = forecastHTML;
+
+
+
+}
+
+
+
+
 //2
 function displaySearchedCity(response) {
   let currentTemperature = Math.round(response.data.main.temp);
@@ -53,7 +90,7 @@ function displaySearchedCity(response) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${currentCity}`;
   let temperature = document.querySelector("#current-temperature");
-  temperature.innerHTML = `${currentTemperature} °C | °F `;
+  temperature.innerHTML = `${currentTemperature} °C `;
   let currentHumidity = document.querySelector("#current-humidity");
   currentHumidity.innerHTML = `Humidity: ${Math.round(
     response.data.main.humidity
@@ -149,3 +186,5 @@ celsiusLink.addEventListener("click", displayCelsiusLink);
 
 let form = document.querySelector("form");
 form.addEventListener("submit", searchedCity);
+
+displayForecast();
