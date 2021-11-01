@@ -41,46 +41,12 @@ let day = days[currentTime.getDay()];
 let month = months[currentTime.getMonth()];
 let year = currentTime.getFullYear();
 let date = currentTime.getDate();
-let sentence = `Today is ${day}, ${date},${month} ${year}, ${hours}:${minutes}`;
+let sentence = ` ${day}, ${date} ${month} ${year}, ${hours}:${minutes}`;
 console.log(sentence);
 let today = document.querySelector("#current-time");
 today.innerHTML = `${sentence}`;
 
 //week 8
-function displayForecast(){
-let forecastElement = document.querySelector("#forecast");
-
-let forecastHTML = `<div class="row>"`;
-let days = ["Fri", "Sat", "Sun","Mon", "Tue"];
-days.forEach(function(day){
-  forecastHTML = forecastHTML + `
-
-<div class="col-2" > 
-    <div class="day">${day}  </div>
-</br>
-<div class="forecast-temperatures"></div>
-   <span class="max-temperature"> 17°C / </span>  
-  <span class="min-temperature "> 8°C </span> 
- 
-</br>
-<img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" width="90" />
- </div>
-</div>
-
-
-`;
-
-
-})
-
-forecastHTML = forecastHTML +`</div`;
-forecastElement.innerHTML = forecastHTML;
-
-
-
-}
-
-
 
 
 //2
@@ -187,4 +153,3 @@ celsiusLink.addEventListener("click", displayCelsiusLink);
 let form = document.querySelector("form");
 form.addEventListener("submit", searchedCity);
 
-displayForecast();

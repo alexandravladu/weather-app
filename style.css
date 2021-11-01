@@ -5,14 +5,19 @@ body {
 
 
 h1 {
+    text-align: center;
     border: 1px transparent;
     margin: 5px 5px 5px 5px;
     font-weight: 600;
     text-decoration: underline;
+   
 }
 
 h1:hover {
     color: #22587b;
+}
+h4{
+    text-align: center;
 }
 .card-body {
     flex: 1 1 auto;
@@ -31,6 +36,16 @@ h1:hover {
     font-size: 20px;
     color: #986f8e;
 }
+#current-time{
+    text-align: center;
+}
+#celsius-link{
+    border-radius: 10px;
+        margin-top: 10 px;
+}
+#fahrenheit-link {
+  border-radius:10px;
+  margin-top: 10 px;}
 
 #current-temperature {
     display: block;
@@ -57,21 +72,8 @@ h1:hover {
     margin: 10px;
 }
 
-.card-nextdays-forecast {
-    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-    border-radius: 2px;
-}
-
-.card-title {
-    color: #b97c95;
-    text-align: center;
-}
-
 .card-text {
     text-align: center;
-}
-#celsius-link{
-    margin: 0 auto;
 }
 
 .search-button {
@@ -116,6 +118,7 @@ h1:hover {
 
 #box {
     background-color: #d6e9f6;
+     border-radius: 30px;
 }
 
 .search-button {
@@ -123,16 +126,8 @@ h1:hover {
     margin-top: 10px;
 }
 
-#fahrenheit-link {
-    margin-top: 5px;
-   
-}
 
-#celsius-link {
-     margin-top: 5px;
-   
- 
-}
+
 
 .cute-emoji {
     font-size: 60px;
@@ -142,11 +137,13 @@ h1:hover {
 }
 .current-precipitations{
     font-size:16px;
+  
 }
 #info{
     font-size: 20px;
 }
-#description{ text-transform: capitalize;}
+#description{ text-transform: capitalize;
+}
 .min-temperature{
     opacity: 0.7;
 }

@@ -16,42 +16,34 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card-body main-body">
-                <div class="row align-items-center justify-content-end" id="box">
+        <div class="card-body"> 
+        <div class="card" id="nice">
+ 
+      <div class="row align-items-center justify-content-end" id="box">
                     <div class="col-3">
                         <form id="search-engine" class="search">
-                            <div class="form-group">
+                                <div class="form-group">
                                 <input id="city-input" type="text" placeholder="Search for your city..." class="form-control search-button"
                                     autofocus="on"  />
-                        
-                                    <input type="submit" value="Search city" class="search-button" />
+                                   <input type="submit" value="Search city" class="search-button" />
                             </form>
-                                </div>
-                                
+                           
+                               <div class="btn-group">               
     <button id="location" class="btn btn-primary active" aria-current="page">Current location</button>
    <a href="#" class="btn btn-primary" id="celsius-link">°C</an>
     <a href="#" class="btn btn-primary" id="fahrenheit-link">°F</a>
- 
-    <div class="col-1">
-        
+  </div>    
+   </div>
+         <div class="col-5">
+ </div>
     </div>
-    </div>
-    <div class="btn-group">
-</div>
-
-<h1 id="city">London</h1>
+        <h1 id="city">London</h1> 
 <span id="current-time">Today: Wednesday, 29th September, 2021, 11:38 </span>
 
-<div class="card" id="nice">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-4">
                 </br>
             </div>
             <span id="info">Current Weather:</span>
-            <div class="clearfix">
-<div class="row align-items-center">
+           <div class="row align-items-center">
 
    <div class="col-4" id="current-temperature"> 14 °C    </div>
  
@@ -59,29 +51,23 @@
     <div class="col-2"> 
 <img  src= "https://openweathermap.org/img/wn/01d@2x.png" id="icon" class="current-weather-emoji" alt="clear"  />
     </div>
-    </div>
-            <div class="col-2">
-               
-                </br>
-                <div row="col-6">
+    
+      <div class="col-3">
+                <div row="col">
                     <ul class="current-precipitations">
-                      
-                        <li id="current-humidity">Humidity: 52%; </li>
+                      <li id="current-humidity">Humidity: 52%; </li>
                         <li id="wind-speed"> Wind: 7 mph</li>
                     </ul>
+                   </div>
                 </div>
-                </div>
-            </br>
-                <h4> 5-Day Forecast </h4>
-                <div class="card-nextdays-forecast" id="forecast"> 
-                    <div class="card-body"> 
-
-  </div>
-    </div>
-    </br>
-     <footer>
+           </div>
+         </div>
+</br>
+  <footer>
          <a href="https://github.com/alexandravladu/weather-app">Open-source code </a>
         , by Alexandra Vladu  </footer>
+       
      <script src="script.js"> </script>
 </body>
 </html>
+
